@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meres</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <h1>Megel Bookshelf</h1>
+            <!-- add new book -->
+            <div>
+                <button type="submit"><i class="fa-solid fa-plus"></i></button>
+                <div>
+                    <h2>Menambahkan Buku</h2>
+                    <form action="">
+                        <div>
+                            <label for="title">Judul</label>
+                            <input type="text" id="title" placeholder="Nano Machine" required>
+                        </div>
+                        <div>
+                            <label for="title">Penulis</label>
+                            <input type="text" id="author" placeholder=" Han-Joong-Wueol-Ya" required>
+                        </div>
+                        <div>
+                            <label for="title">Tahun Terbit</label>
+                            <input type="number" id="title" placeholder="2017" required>
+                        </div>
+                        <div>
+                            <label for="title">Target selesai membaca</label>
+                            <input type="date" id="title" required>
+                        </div>
+                        <div>
+                            <label for="title">Sudah selesai dibaca</label>
+                            <input type="checkbox" id="title" required>
+                        </div>
+                        <button type="submit">Masukan Buku Kedalam Rak</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Search Book -->
+           <form action="">
+            <div>
+                <!-- input search-->
+                <input type="text" placeholder="Masukkan Judul Buku">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+           </form>
+        </nav>
+    </header>
+    <main>
+        <!-- Daftar Buku  yang belum selesai dibaca-->
+        <div>
+            <h4>Buku yang belum Selesai dibaca</h4>
+            <div></div>
+        </div>
+        <!-- Daftar buku yang sudah selesai dibaca-->
+        <div>
+            <h4>Buku yang sudah Selesai dibaca</h4>
+            <div></div>
+        </div>
+    </main>
+    <footer>
+        <p>Meres 2022 | Dzaki Afrian</p>
+    </footer>
+    <!-- Javasript link -->
+    <script src="https://kit.fontawesome.com/80f3ed311f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
