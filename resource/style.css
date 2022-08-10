@@ -4,31 +4,126 @@ body {
   margin: 0px;
   font-family: 'Mingzat', sans-serif;
   font-size: 14pt;
+  text-align: center;
 }
 header{
-    padding: 5px;
-    background: #858DE8;
-    color: whitesmoke;
-    position: sticky;
+  margin: 0px;
+  padding: 5px;
+  background: #858DE8;
+  color: whitesmoke;
+  position: sticky;
 }
-.navbar{overflow: auto;}
+ul li{list-style-type: none; display: inline-block;}
 .navbar-brand{text-align: left;}
 .brand-name{
-    font-size: 20pt; 
-    color: #858DE8;
-    background: whitesmoke;
-    padding: 4px;
-    border-radius: 12px;
+  font-size: 20pt; 
+  color: #858DE8;
+  background: whitesmoke;
+  padding: 3px 7px;
+  border-radius: 12px;
+  margin: 1px;
+}
+.brand-model{
+  padding: 2px 4px;
+  margin: 2px;
+  border-radius: 7px;
+  background-color: whitesmoke;
+  color: #858DE8;
 }
 .navbar-search{
-    overflow: auto;
+  margin: 5px 0px 5px 20px;
+  background: whitesmoke;
+  border-radius: 7px;
+  display: inline-block;
 }
 .navbar-search input{
+  height: 25px;
+  margin: 2px 5px;
   width: 40%;
   min-width: 150px;
-  margin-right: 0px;
+  border: 0px;
+  background-color: whitesmoke;
 }
+input:focus{outline: 0px;}
 .navbar-search button{
-  padding: 3px;
-  margin-left: 0px;
+  border: 0px;
+  background: whitesmoke;
+  color: #858DE8;
 }
+.navbar-toggler{
+  color: #858DE8;
+  border: 0px;
+  font-size: 16pt;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 50%;
+}
+main{
+  margin: 11px;
+  min-height: 25em;
+}
+.tampilkan-content{
+  display: none;
+  border: 2px solid #858DE8;
+  border-radius: 20px;
+  padding: 33px;
+  box-shadow: 5px 7px 10px #858DE8;
+  margin-bottom: 10px;
+}
+.input-item{
+  margin: 5px;
+  background: whitesmoke;
+  border: 1px solid gray;
+  border-radius: 5px;
+  text-align: center;
+}
+.input-item input{
+  width: 99%;
+  height: 35px;
+  font-size: 12pt;
+  border: 0px;
+  border-radius: 5px;
+}
+.checkout-book{
+  width: 90%;
+  border-radius: 5px;
+  padding: 5px;
+  border: 0px;
+  color: whitesmoke;
+  background: #858DE8;
+  font-size: 12pt;
+}
+.rak{
+  background: wihte;
+  border: 1px solid #858DE8;
+  border-radius: 5px;
+  box-shadow: 2px 5px 10px #858DE8;
+  margin: 10px;
+  padding: 10px;
+}
+.rak-item{display: inline-block;}
+.book-item{
+  width: 10em;
+  min-width: 60px;
+  background: whitesmoke;
+  padding: 5px;
+  margin: 7px;
+  border-radius: 3px;
+  border: 2px solid #858DE8;
+  box-shadow: 5px 3px #858DE8
+}
+.book-item h4{
+  background: white;
+  border-radius: 4px;
+  border-bottom: 2px solid #858DE8;
+}
+.book-item p{
+  font-size: 11pt;
+}
+footer {
+  background: #858DE8;
+  padding: 11px;
+  margin: 11px 0px 0px 0px;
+  color: whitesmoke;
+}
+.show{display: inline-block;}

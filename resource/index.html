@@ -12,57 +12,60 @@
     <!-- Header -->
     <header>
         <nav class="navbar">
-            <h1 class="navbar-brand"><span class="brand-name">M</span>eres Bo0kShelf</h1>
+            <ul class="navbar-menu">
+                <li class="navbar-brand">
+                    <h1><span class="brand-name">M</span>eres Bo0k<span class="brand-model">Shelf</span></h1>
+                </li>
             <!-- Search Book -->
-            <div class="navbar-search">
-                <!-- input search-->
-                <input type="text" placeholder="Masukkan Judul Buku" required>
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-           <!-- add new book -->
-           <div class="navbar-addBook">
-            <button class="navbar-toggler" type="submit">
-                <i class="fa-solid fa-plus button-addbook"></i>
-            </button>
-            <div class="tampilkanBuku">
-                <h2 class="">Menambahkan Buku</h2>
-                <form class="input-menu" action="">
-                    <div class="input-item">
-                        <label for="title">Judul</label>
-                        <input type="text" id="title" placeholder="Nano Machine" required>
-                    </div>
-                    <div class="input-item">
-                        <label for="title">Penulis</label>
-                        <input type="text" id="author" placeholder=" Han-Joong-Wueol-Ya" required>
-                    </div>
-                    <div class="input-item">
-                        <label for="title">Tahun Terbit</label>
-                        <input type="number" id="title" placeholder="2017" required>
-                    </div>
-                    <div class="input-item">
-                        <label for="title">Target selesai membaca</label>
-                        <input type="date" id="title" required>
-                    </div>
-                    <div class="input-item">
-                        <label for="title">Sudah selesai dibaca</label>
-                        <input type="checkbox" id="title" required>
-                    </div>
-                    <button type="submit">Masukan Buku Kedalam Rak</button>
-                </form>
-            </div>
-        </div>
+                <li class="navbar-search">
+                    <!-- input search-->
+                    <input type="text" placeholder="Masukkan Judul Buku" required>
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </li>
+            <!-- tombol add new book -->
+                <li class="navbar-addBook">
+                    <input id="addBukuku" class="navbar-toggler" onclick="showAddBook()" type="button" value="&plus;">
+                </li>
+            </ul>
         </nav>
     </header>
     <main>
+        <!--tampilkan input untuk menambah buku-->
+        <div id="tampilkanBuku" class="tampilkan-content">
+            <h2 class="">Menambahkan Buku</h2>
+            <form class="input-menu" action="">
+                <div class="input-item">
+                    <label for="title">Judul</label>
+                    <input type="text" id="title" placeholder="Nano Machine" required>
+                </div>
+                <div class="input-item">
+                    <label for="title">Penulis</label>
+                    <input type="text" id="author" placeholder=" Han-Joong-Wueol-Ya" required>
+                </div>
+                <div class="input-item">
+                    <label for="title">Tahun Terbit</label>
+                    <input type="number" id="title" placeholder="2017" required>
+                </div>
+                <div class="input-item">
+                    <label for="title">Target selesai membaca</label>
+                    <input type="date" id="title" required>
+                </div>
+                <div class="">
+                    <label for="title">Sudah selesai dibaca</label>
+                    <input type="checkbox" id="title" required>
+                </div>
+                <button class="checkout-book" type="submit">Masukan Buku Kedalam Rak</button>
+            </form>
+        </div>
         <!-- Daftar Buku  yang belum selesai dibaca-->
-        <div>
-            <h4>Buku yang belum Selesai dibaca</h4>
-            <div></div>
+        <div class="rak">
+            <h3>Buku yang belum Selesai dibaca</h3>
+            <ul class="rak-item"></ul>
         </div>
         <!-- Daftar buku yang sudah selesai dibaca-->
-        <div>
-            <h4>Buku yang sudah Selesai dibaca</h4>
-            <div></div>
+        <div class="rak">
+            <h3>Buku yang sudah Selesai dibaca</h3>
+            <ul class="rak-item"></ul>
         </div>
     </main>
     <footer>
